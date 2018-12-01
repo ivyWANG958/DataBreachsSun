@@ -1,0 +1,580 @@
+{
+  "name": "Data Breachs -- type and companies",
+  "children": [
+    {
+      "name": "accidentally published", 
+      "children": [
+        {
+          "name": "web",     
+          "children": [
+            {"name": "AOL", "size": 20000000}, 
+            {"name": "Facebook",  "size": 6000000}, 
+            {"name": "River City Media", "size": 1370000000}
+          ]
+        },
+        {
+          "name": "government",
+          "children": [
+            {"name": "Jefferson County", "size": 1600000},
+            {"name": "Norwegian Tax Authorities", "size": 3950000},
+            {"name": "State of Texas", "size": 3500000}, 
+            {"name": "Office of the Texas Attorney General", "size": 6500000}, 
+            {"name": "Australian Immigration Department", "size": 500000}, 
+            {"name": "Privatization Agency of the Republic of Serbia", "size": 20000000}, 
+            {"name": "Aadhaar", "size": 1000000000}
+            
+          ]
+        },
+        {
+          "name": "academic",     
+          "children": [
+            {"name": "Yale University", "size": 43000}
+          ]
+        },
+        {
+          "name": "military",     
+          "children": [
+            {"name": "US Army", "size": 50000}
+          ]
+        },
+        {
+          "name": "retail",     
+          "children": [
+            {"name": "Apple", "size": 12367232}, 
+            {"name": "CEX", "size": 2000000}
+          ]
+        },
+        {
+          "name": "financial",     
+          "children": [
+            {"name": "Citigroup", "size": 150000}
+          ]
+        },
+        {
+          "name": "telecoms",     
+          "children": [
+            {"name": "TerraCom & YourTel", "size": 170000}, 
+            {"name": "CEX", "size": 2000000}
+          ]
+        },
+        {
+          "name": "transport",     
+          "children": [
+            {"name": "NMBS", "size": 1460000},
+            {"name": "ViewFines", "size": 934000}
+          ]
+        },
+        {
+          "name": "healthcare",     
+          "children": [
+            {"name": "Red Cross Blood Service", "size": 550000}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "inside job", 
+      "children": [
+        {
+          "name": "web",     
+          "children": [
+            {"name": "AOL", "size": 92000000}
+          ]
+        },
+        {
+          "name": "government",
+          "children": [
+            {"name": "Texas Lottery", "size": 89000},
+            {"name": "Embassy Cables", "size": 251000},
+            {"name": "Classified Iraq War documents", "size": 392000}, 
+            {"name": "National Security Agency", "size": 1500000}, 
+            {"name": "Kissinger Cables", "size": 1700000}
+          ]
+        },
+        {
+          "name": "military",     
+          "children": [
+            {"name": "US Army", "size": 260000}
+          ]
+        },
+        {
+          "name": "retail",     
+          "children": [
+            {"name": "Dai Nippon Printing", "size": 8637405}
+          ]
+        },
+        {
+          "name": "financial",     
+          "children": [
+            {"name": "Countrywide Financial Corp", "size": 2600000},
+            {"name": "Compass Bank", "size": 1000000},
+            {"name": "Fidelity National Information Services", "size": 8500000},
+            {"name": "Countrywide Financial Corp", "size": 2500000},
+            {"name": "Court Ventures", "size": 200000000},
+            {"name": "Korea Credit Bureau", "size": 20000000}
+          ]
+        },
+        {
+          "name": "energy",     
+          "children": [
+            {"name": "GS Caltex", "size": 11100000},
+            {"name": "New York State Electric & Gas", "size": 1800000}
+          ]
+        },
+        {
+          "name": "telecoms",     
+          "children": [
+            {"name": "Vodafone", "size": 2000000}
+          ]
+        },
+        {
+          "name": "healthcare",     
+          "children": [
+            {"name": "Mutuelle Generale de la Police", "size": 112000},
+            {"name": "South Carolina Government", "size": 6400000}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "poor security", 
+      "children": [
+        {
+          "name": "web",     
+          "children": [
+            {"name": "Mozilla", "size": 76000},
+            {"name": "Sanrio", "size": 3300000},
+            {"name": "Deep Root Analytics", "size": 198000000},
+            {"name": "RootsWeb", "size": 300000},
+            {"name": "Spambot", "size": 711000000},
+            {"name": "Texas voter records", "size": 14800000},
+            {"name": "LocalBlox", "size": 48000000}           
+          ]
+        },
+        {
+          "name": "government",
+          "children": [
+            {"name": "Swedish Transport Agency", "size": 3000000},
+            {"name": "Aadhaar", "size": 1100000000}
+          ]
+        },
+        
+        {
+          "name": "retail",     
+          "children": [
+            {"name": "MBM Company", "size": 1300000},
+            {"name": "Panerabread", "size": 37000000}
+          ]
+        },
+        {
+          "name": "financial",     
+          "children": [
+            {"name": "Automatic Data Processing", "size": 125000}
+          ]
+        },
+        {
+          "name": "app",     
+          "children": [
+            {"name": "Waterly", "size": 1000000},
+            {"name": "SVR Tracking", "size": 540000},
+            {"name": "Al.type", "size": 31000000},
+            {"name": "Twitter", "size": 330000000},
+            {"name": "Firebase", "size": 100000000},
+            {"name": "Nametests", "size": 120000000},
+            {"name": "Grindr", "size": 3000000}
+            
+          ]
+        },
+        {
+          "name": "media",     
+          "children": [
+            {"name": "World Check", "size": 2200000}
+          ]
+        },
+        {
+          "name": "healthcare",     
+          "children": [
+            {"name": "Accendo Insurance Co.", "size": 175350}
+          ]
+        },
+        {
+          "name": "academic",     
+          "children": [
+            {"name": "Indiana University", "size": 146000}
+          ]
+        },
+        {
+          "name": "transport",     
+          "children": [
+            {"name": "New York Taxis", "size": 52000}
+          ]
+        },
+        {
+          "name": "tech",     
+          "children": [
+            {"name": "Uber", "size": 50000}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lost / stolen device or media", 
+      "children": [
+        
+        {
+          "name": "government",
+          "children": [
+            {"name": "US Dept of Vet Affairs", "size": 26500000},
+            {"name": "City and Hackney Teaching Primary Care Trust", "size": 160000},
+            {"name": "Driving Standards Agency", "size": 3000000},
+            {"name": "UK Revenue & Customs", "size": 25000000},
+            {"name": "Service Personnel and Veterans Agency (UK)", "size": 50500},
+            {"name": "UK Home Office", "size": 84000},
+            {"name": "UK Ministry of Defence", "size": 1700000},
+            {"name": "California Department of Child Support Services", "size": 800000},
+            {"name": "Florida Courts", "size": 100000},
+            {"name": "Florida Department of Juvenile Justice", "size": 100000},
+            {"name": "Hong Kong Registration & Electoral Office", "size": 3700000}
+          ]
+        },
+        
+        {
+          "name": "retail",     
+          "children": [
+            {"name": "Hewlett Packard", "size": 200000},
+            {"name": "Gap Inc", "size": 800000},
+            {"name": "Starbucks", "size": 97000}
+          ]
+        },
+        {
+          "name": "financial",     
+          "children": [
+            {"name": "Ameritrade Inc.", "size": 200000},
+            {"name": "Citigroup", "size": 3900000},
+            {"name": "BNY Mellon Shareowner Services", "size": 12500000},
+            {"name": "JP Morgan Chase", "size": 2600000},
+            {"name": "Educational Credit Management Corp", "size": 3300000},
+            {"name": "Morgan Stanley Smith Barney", "size": 34000}
+          ]
+        },
+        {
+          "name": "telecoms",     
+          "children": [
+            {"name": "T-Mobile, Deutsche Telecom", "size": 17000000},
+            {"name": "AT&T", "size": 113000}
+          ]
+        },
+        {
+          "name": "military",     
+          "children": [
+            {"name": "US Dept of Defense", "size": 72000},
+            {"name": "US National Guard", "size": 131000},
+            {"name": "US Military", "size": 76000000},
+            {"name": "Tricare", "size": 4901432}
+          ]
+        },
+        {
+          "name": "healthcare",     
+          "children": [
+            {"name": "Affinity Health Plan, Inc.", "size": 344579},
+            {"name": "Blue Cross Blue Shield of Tennessee", "size": 1023209},
+            {"name": "AvMed, Inc.", "size": 1220000},
+            {"name": "Health Net", "size": 1500000},
+            {"name": "Colorado government", "size": 105470},
+            {"name": "Lincoln Medical & Mental Health Center", "size": 130495},
+            {"name": "Emergency Healthcare Physicians, Ltd.", "size": 180111},
+            {"name": "Triple-S Salud, Inc.", "size": 398000},
+            {"name": "South Shore Hospital, Massachusetts", "size": 800000},
+            {"name": "New York City Health & Hospitals Corp.", "size": 1700000},
+            {"name": "Memorial Healthcare System", "size": 102153},
+            {"name": "Spartanburg Regional Healthcare System", "size": 400000},
+            {"name": "Eisenhower Medical Center", "size": 175350},
+            {"name": "Nemours Foundation", "size": 1055489},
+            {"name": "Health Net - IBM", "size": 1900000},
+            {"name": "Sutter Medical Foundation", "size": 4243434},
+            {"name": "NHS", "size": 8300000},
+            {"name": "Emory Healthcare", "size": 315000},
+            {"name": "Crescent Health Inc., Walgreens", "size": 100000},
+            {"name": "Advocate Medical Group", "size": 4000000}
+          ]
+        },
+        {
+          "name": "academic",     
+          "children": [
+            {"name": "Stanford University", "size": 72000},
+            {"name": "University of Miami", "size": 2100000},
+            {"name": "University of Utah Hospitals & Clinics", "size": 2200000}
+          ]
+        }
+      
+      ]     
+    },
+    {
+      "name": "hacked", 
+      "children": [
+        
+        {
+          "name": "financial",
+          "children": [
+            {"name": "Cardsystems Solutions Inc.", "size": 40000000},
+            {"name": "TD Ameritrade", "size": 6300000},
+            {"name": "RBS Worldpay", "size": 1500000},
+            {"name": "Data Processors International", "size": 5000000},
+            {"name": "CheckFree Corporation", "size": 5000000},
+            {"name": "Heartland", "size": 130000000},
+            {"name": "US Federal Reserve Bank of Cleveland", "size": 400000},
+            {"name": "Citigroup", "size": 360083},
+            {"name": "Global Payments", "size": 7000000},
+            {"name": "Three Iranian banks", "size": 3000000},
+            {"name": "Massive American business hack", "size": 160000000},
+            {"name": "NASDAQ  ", "size": 500000},
+            {"name": "European Central Bank", "size": 4000000},
+            {"name": "JP Morgan Chase", "size": 76000000},
+            {"name": "HSBC Turkey", "size": 2700000},
+            {"name": "Invest Bank", "size": 40000},
+            {"name": "Wonga", "size": 270000},
+            {"name": "Equifax", "size": 143000000},
+            {"name": "Viacom", "size": 1600000}
+
+          ]
+        },
+        
+        {
+          "name": "telecoms",     
+          "children": [
+            {"name": "KDDI", "size": 4000000},
+            {"name": "AT&T", "size": 114000},
+            {"name": "KT Corp.", "size": 8700000},
+            {"name": "Three", "size": 200000},
+            {"name": "Bell", "size": 1900000},
+            {"name": "Malaysian telcos & MVNOs", "size": 46200000},
+            {"name": "T-Mobile", "size": 2000000}
+   
+          ]
+        },
+
+        {
+          "name": "academic",     
+          "children": [
+            {"name": "University of California Berkeley", "size": 160000},
+            {"name": "Ohio State University", "size": 760000},
+            {"name": "University of Wisconsin - Milwaukee", "size": 73000},
+            {"name": "Kirkwood Community College", "size": 125000}
+          ]
+        },
+        {
+          "name": "app",     
+          "children": [
+            {"name": "Imgur", "size": 1700000},
+            {"name": "Uber", "size": 57000000},
+            {"name": "Snapchat", "size": 1700000},
+            {"name": "MyFitnessPal", "size": 150000000},
+            {"name": "Careem", "size": 14000000}
+          ]
+        },
+        {
+          "name": "energy",     
+          "children": [
+            {"name": "Central Hudson Gas & Electric", "size": 110000}
+          ]
+        },
+        {
+          "name": "gaming",     
+          "children": [
+            {"name": "Bethesda Game Studios", "size": 200000},
+            {"name": "Sega", "size": 1290755},
+            {"name": "Sony Online Entertainment", "size": 24600000},
+            {"name": "Sony PSN", "size": 77000000},
+            {"name": "Blizzard", "size": 14000000},
+            {"name": "Nintendo", "size": 240000},
+            {"name": "UbiSoft", "size": 0}
+          ]
+        },
+        {
+          "name": "government",     
+          "children": [
+            {"name": "Chile Ministry Of Education", "size": 6000000},
+            {"name": "US Law Enforcement", "size": 123461},
+            {"name": "San Francisco Public Utilities Commission", "size": 180000},
+            {"name": "Massachusetts Government", "size": 210000},
+            {"name": "Oregon Department of Motor Vehicles", "size": 1000000},
+            {"name": "Greek government", "size": 9000000},
+            {"name": "South Carolina State Dept. of Revenue", "size": 3600000},
+            {"name": "Washington State court system", "size": 160000},
+            {"name": "IRS", "size": 100000},
+            {"name": "US Office of Personnel Management", "size": 4000000},
+            {"name": "US Office of Personnel Management (2nd Breach)", "size": 21500000},
+            {"name": "Syrian government", "size": 274477},
+            {"name": "Turkish citizenship database", "size": 49611709},
+            {"name": "Philippines‚Äô Commission on Elections", "size": 55000000},
+            {"name": "Clinton campaign", "size": 5000000},
+            {"name": "Virginia Dept. Of Health", "size": 8257378},
+            {"name": "Medicaid", "size": 780000}
+            
+          ]
+        },
+        {
+          "name": "healthcare",     
+          "children": [
+            {"name": "Virginia Prescription Monitoring Program", "size": 531400},
+            {"name": "Ankle & foot Center of Tampa Bay, Inc.", "size": 156000},
+            {"name": "Seacoast Radiology, PA", "size": 231400},
+            {"name": "Puerto Rico Department of Health", "size": 515000},
+            {"name": "Southern California Medical-Legal Consultants", "size": 300000},
+            {"name": "Community Health Systems", "size": 4500000},
+            {"name": "Twitch.tv", "size": 10000000},
+            {"name": "Carefirst", "size": 1100000},
+            {"name": "Premera", "size": 11000000},
+            {"name": "Anthem", "size": 80000000},
+            {"name": "Banner Health", "size": 3700000},
+            {"name": "Quest Diagnostics", "size": 34000},
+            {"name": "Malaysian medical practitioners", "size": 81309},
+            {"name": "Health South East", "size": 3000000}
+          ]
+        },
+        {
+          "name": "legal",     
+          "children": [
+            {"name": "Mossack Fonseca", "size": 11500000}
+          ]
+        },
+        {
+          "name": "military",     
+          "children": [
+            {"name": "Stratfor", "size": 935000}
+          ]
+        },
+        {
+          "name": "media",     
+          "children": [
+            {"name": "Washington Post", "size": 1270000},
+            {"name": "Sony Pictures", "size": 10000000}
+          ]
+        },
+        {
+          "name": "retail",     
+          "children": [
+            {"name": "Hannaford Brothers Supermarket Chain", "size": 4200000},
+            {"name": "TK / TJ Maxx", "size": 94000000 },
+            {"name": "Restaurant Depot", "size": 200000},
+            {"name": "Honda Canada", "size": 283000 },
+            {"name": "Neiman Marcus", "size": 1100000},
+            {"name": "Staples", "size": 1160000 },
+            {"name": "UPS", "size": 4000000},
+            {"name": "Home Depot", "size": 56000000},
+            {"name": "Target", "size": 70000000 },
+            {"name": "British Airways", "size": 500000  },
+            {"name": "Wendy's", "size": 1025  },
+            {"name": "Saks and Lord & Taylor", "size": 5000000},
+            {"name": "Newegg", "size": 45000000}
+          ]
+        },
+        {
+          "name": "tech",     
+          "children": [
+            {"name": "Network Solutions", "size": 573000},
+            {"name": "Apple", "size": 275000},
+            {"name": "Ubuntu", "size": 2000000},
+            {"name": "Adobe", "size": 36000000},
+            {"name": "D&B, Altegrity", "size": 1000000},
+            {"name": "MSpy", "size": 500000},
+            {"name": "Cellebrite", "size": 3000000},
+            {"name": "Telegram", "size": 15000000},
+            {"name": "Dixons Carphone", "size": 10000000},
+            {"name": "Yahoo Voices", "size": 450000},
+            {"name": "Yahoo Japan", "size": 22000000}
+           
+          ]
+        },
+        {
+          "name": "web",     
+          "children": [
+            {"name": "Monster.com", "size": 1600000},
+            {"name": "Auction.co.kr", "size": 18000000},
+            {"name": "Gawker.com", "size": 1500000},
+            {"name": "Betfair", "size": 2300000},
+            {"name": "Writerspace.com", "size": 62000},
+            {"name": "Epsilon", "size": 3000000},
+            {"name": "Sony Pictures", "size": 1000000},
+            {"name": "China Software Developer Network", "size": 6000000},
+            {"name": "178.com", "size": 10000000},
+            {"name": "Nexon Korea Corp", "size": 13200000},
+            {"name": "Tianya", "size": 28000000},
+            {"name": "Steam", "size": 35000000},
+            {"name": "Formspring", "size": 420000},
+            {"name": "LinkedIn, eHarmony, Last.fm", "size": 8000000},
+            {"name": "Gamigo", "size": 8000000},
+            {"name": "Zappos", "size": 24000000},
+            {"name": "Last.fm", "size": 43500000},
+            {"name": "Dropbox", "size": 68730000},
+            {"name": "LinkedIn", "size": 117000000},
+            {"name": "Disqus", "size": 17500000},
+            {"name": "Scribd", "size": 500000},
+            {"name": "Drupal", "size": 1000000},
+            {"name": "ssndob.ms", "size": 4000000},
+            {"name": "Evernote", "size": 50000000},
+            {"name": "Living Social", "size": 50000000},
+           
+            {"name": "Tumblr", "size": 65000000},
+            {"name": "Twitter", "size": 250000},
+            {"name": "Dominios Pizzas (France)", "size": 600000},
+            {"name": "MacRumours.com", "size": 860000},
+            {"name": "Gmail", "size": 5000000},
+            {"name": "AOL", "size": 2400000},
+            {"name": "Ebay", "size": 145000000},
+       
+           
+            {"name": "TalkTalk", "size": 157000},
+            {"name": "Hacking Team", "size": 500000},
+            {"name": "CarPhone Warehouse", "size": 2700000},
+            {"name": "Adult Friend Finder", "size": 3900000},
+            {"name": "VTech", "size": 6400000},
+            {"name": "Kromtech", "size": 13000000},
+            {"name": "Experian / T-mobile", "size": 15000000},
+            {"name": "AshleyMadison.com", "size": 37000000},
+            {"name": "Securus Technologies", "size": 70000000},
+            {"name": "Minecraft", "size": 7000000},
+            {"name": "Mail. ru", "size": 25000000},
+            {"name": "Fling", "size": 40000000},
+            {"name": "VK", "size": 100544934},
+            {"name": "MySpace", "size": 164000000},
+            {"name": "Linux Ubuntu forums", "size": 2000000},
+            {"name": "uTorrent", "size": 35000},
+            {"name": "PayAsUGym", "size": 300000},
+            {"name": "DaFont", "size": 700000},
+            {"name": "Brazzers", "size": 790724},
+            {"name": "ClixSense", "size": 6600000},
+            {"name": "Lynda.com", "size": 9500000},
+            {"name": "Interpark", "size": 10000000},
+            {"name": "Zomato", "size": 17000000},
+            {"name": "Yahoo", "size":  1532000000},
+            {"name": "Weebly", "size": 43000000},
+            {"name": "Dailymotion", "size": 85200000},
+            {"name": "Friend Finder Network", "size": 412000000},
+            {"name": "MyHeritage", "size": 92283889},
+            {"name": "Instagram", "size": 6000000},
+            {"name": "Nival", "size": 1500000},
+            {"name": "KM.ru", "size": 1500000},
+            {"name": "Viacom", "size": 3000000},
+            {"name": "Orbitz", "size": 880000},
+            {"name": "Ticketmaster", "size": 40000},
+            {"name": "TicketFly", "size": 27000000},
+            {"name": "Facebook", "size": 2250000000},
+            {"name": "RockYou!", "size": 32000000},
+            {"name": "Militarysingles.com", "size": 163792},
+            {"name": "SnapChat", "size": 4700000} 
+          ]
+        },
+        {
+          "name": "transport",     
+          "children": [
+            {"name": "Japan Airlines", "size": 750000},
+            {"name": "British Airways", "size": 380000}
+          ]
+        }       
+      
+      ]     
+    }
+    
+  ]
+}

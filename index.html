@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    body {
+        font-family: Sans-serif;
+        font-size: 11px;
+    }
+
+    .slice {
+        cursor: pointer;
+    }
+
+    .slice .main-arc {
+        stroke: #fff;
+        stroke-width: 1px;
+    }
+
+    .slice .hidden-arc {
+        fill: none;
+    }
+
+    .slice text {
+        pointer-events: none;
+        dominant-baseline: middle;
+        text-anchor: middle;
+    }
+</style>
+
+<body>
+    <script src="//d3js.org/d3.v4.min.js"></script>
+
+    <script>
+
+        var width = 800,
+            height = 600,
+            radius = (Math.min(width, height) / 2) - 10;
+
+        var formatNumber = d3.format(",d");
+
+        var x = d3.scaleLinear()
+            .range([0, 2 * Math.PI])
+            .clamp(true); //超过范围的输入值会被映射到输出范围的(最近的)端点上
+
+
+        var y = d3.scaleSqrt()
+            .range([0, radius]);
+
+        var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+        var partition = d3.partition();
+
+        var arc = d3.arc()
+            .startAngle(function (d) { return x(d.x0); })
+            .endAngle(function (d) { return x(d.x1); })
+            .innerRadius(function (d) { return Math.max(0, y(d.y0)); })
+            .outerRadius(function (d) { return Math.max(0, y(d.y1)); });
+
+        var middleArcLine = function (d) {
+            var halfPi = Math.PI / 2;
+            var angles = [x(d.x0) - halfPi, x(d.x1) - halfPi];
+            var r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
+
+            var middleAngle = (angles[1] + angles[0]) / 2;
+            var invertDirection = middleAngle > 0 && middleAngle < Math.PI; // On lower quadrants write text ccw
+            if (invertDirection) { angles.reverse(); }
+
+            var path = d3.path();
+            path.arc(0, 0, r, angles[0], angles[1], invertDirection);
+            return path.toString();
+        };
+
+        var textFits = function (d) {
+            var CHAR_SPACE = 6;
+
+            var deltaAngle = x(d.x1) - x(d.x0);
+            var r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
+            var perimeter = r * deltaAngle;
+
+            return d.data.name.length * CHAR_SPACE < perimeter;
+        };
+
+
+
+        var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .append("g")
+            .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")")
+            .on('click', function () {
+                return focusOn();
+            });
+
+
+        d3.json("dataMy.json", function (error, root) {
+            if (error) throw error;
+
+
+            root = d3.hierarchy(root);
+            root.sum(function (d) { return d.size; });
+
+            var slice = svg.selectAll('g.slice')
+                .data(partition(root).descendants());
+
+            slice.exit().remove();
+
+            var newSlice = slice.enter()
+                .append('g').attr('class', 'slice')
+                .on('click', function (d) {
+                    d3.event.stopPropagation();
+                    focusOn(d);
+                });
+
+            newSlice.append('title')
+                .text(function (d) { return d.data.name + '\n' + formatNumber(d.value); });
+
+            newSlice.append('path')
+                .attr('class', 'main-arc')
+                .style('fill', function (d) { return color((d.children ? d : d.parent).data.name); })
+                .attr('d', arc);
+
+            newSlice.append('path')
+                .attr('class', 'hidden-arc')
+                .attr('id', function (d, i) { return 'hiddenArc['+ i + ']'; })
+                .attr('d', middleArcLine);
+
+            var text = newSlice.append('text')
+                .attr('display', function (d) { return textFits(d) ? null: null; });
+
+            // Add white contour
+            text.append('textPath')
+                .attr('startOffset', '50%')
+                .attr('xlink:href', function (d, i) { return '#hiddenArc['+ i + ']'; })
+                .text(function (d) { return d.data.name; })
+                .style('fill', 'none')
+                .style('stroke', '#fff')
+                .style('stroke-width', 5)
+                .style('stroke-linejoin', 'round');
+
+            text.append('textPath')
+                .attr('startOffset', '50%')
+                .attr('xlink:href', function (d, i) { return '#hiddenArc['+ i + ']'; })
+                .text(function (d) { return d.data.name; });
+
+
+        });
+        function focusOn(d = { x0: 0, x1: 1, y0: 0, y1: 1 }) {
+            // Reset to top-level if no data point specified
+
+            var transition = svg.transition()
+                .duration(750)
+                .tween('scale', function () {
+                    var xd = d3.interpolate(x.domain(), [d.x0, d.x1]),
+                        yd = d3.interpolate(y.domain(), [d.y0, 1]);
+                    return function (t) { return x.domain(xd(t)); y.domain(yd(t)); };
+                });
+
+            transition.selectAll('path.main-arc')
+                .attrTween('d', function (d) { return function () { return arc(d); }; });
+
+
+            transition.selectAll('path.hidden-arc')
+                .attrTween('d', function (d) { return function () { return middleArcLine(d); }; });
+
+            transition.selectAll('text')
+                .attrTween('display', function (d) { return function () { return textFits(d) ? null : 'none'; }; });
+
+
+            moveStackToFront(d);
+
+            //
+
+            function moveStackToFront(elD) {
+                svg.selectAll('.slice').filter(function (d) { return d === elD; })
+                    .each(function (d) {
+                        this.parentNode.appendChild(this);
+                        if (d.parent) { moveStackToFront(d.parent); }
+                    })
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
